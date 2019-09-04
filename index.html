@@ -13,25 +13,25 @@
 
 <table>
   <!-- <tr>  <td> Count </td> <td> <input name='cnt' id='cnt'> </td>  </tr> -->
-  <tr>  
-    <td> length </td>   
-    <td> <input name='cntLen' id='cntLen' type='number' size='2' maxlength="2"  value='12' style="width: 3em;"> </td>  
+  <tr>
+    <td> length </td>
+    <td> <input name='cntLen' id='cntLen' type='number' size='2' maxlength="2"  value='12' style="width: 3em;"> </td>
   </tr>
-  <tr>  
-      <td> 
-            <input type='submit' value='[ gen one ]'   id='smtOk'    onclick="randomGen();" > 
-            <input type='submit' value='[ gen multi]'  id='smtmulti' onclick="tableCreate(4,3);" > 
-      </td>  
-      <td> 
+  <tr>
+      <td>
+            <input type='submit' value='[ gen one ]'   id='smtOk'    onclick="randomGen();" >
+            <input type='submit' value='[ gen multi]'  id='smtmulti' onclick="tableCreate(4,3);" >
+      </td>
+      <td>
         <input type='submit' value='[ clear ]' name='clear' id='clear' onclick="tableClear();">
         <input type='submit' value='[ quit  ]' name='quit' id='quit'    onclick="quitApp()">
-      </td>        
+      </td>
   </tr>
   <tr> <td> random value </td> <td> <font color='red'><div id='RandomValue'></div> </font> </td> </tr>
 </table>
 
 <p>
-  <label> total multi set(s)</label> 
+  <label> total multi set(s)</label>
   <input id='cntTbls' type='number' size="2"  maxlength="2"  disabled='disabled' value="0" style="width: 2em;" />
 </p>
 
@@ -42,7 +42,7 @@
     function randomGen(){
       var rand = Math.floor(Math.random() * 1786) + 5878;
       var array = new Uint32Array(2);
-      var cntL = parseInt(document.getElementById("cntLen").value,10) ;   
+      var cntL = parseInt(document.getElementById("cntLen").value,10) ;
       document.getElementById('RandomValue').innerHTML=randomString(cntL);
     }
 
@@ -72,20 +72,20 @@
       }
 
       for(var i=1 ; i<matches.length+1;i++ ){
-        var tableR = document.getElementById('tblRand' +i); 
+        var tableR = document.getElementById('tblRand' +i);
         tableR.parentNode.removeChild(tableR);
       }
       document.getElementById('cntTbls').value=0;
     }
 
     function tableCreate(row,col){
-      var cntTbl = parseInt(document.getElementById("cntTbls").value,10) ; 
+      var cntTbl = parseInt(document.getElementById("cntTbls").value,10) ;
       var body = document.body,
           tbl  = document.createElement('table');
       tbl.id='tblRand'+ ++cntTbl;
       document.getElementById('cntTbls').value=cntTbl;
       tbl.setAttribute("border-collapse", "collapse");
-      tbl.setAttribute("class", "tblRandZ"); 
+      tbl.setAttribute("class", "tblRandZ");
       tbl.style.width  = '100px';
       tbl.style.border = '1px solid black;';
 
@@ -109,7 +109,7 @@
         body.appendChild(tbl);
         body.appendChild(document.createElement('p'));
     }
-    
+
   </script>
 
   <style>
@@ -121,6 +121,5 @@
 
    // input[type="number"] {   width:32px;}
   </style>
-
   </body>
 </html>
