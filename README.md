@@ -2,4 +2,8 @@
 Random Password Generator
 
 
-Just another `hello world` app using Electron framework
+Just another kinda `hello world` app using Electron framework
+
+Generates multiple passwords with random alpha-numeric characters.
+
+<img src='passwd-gen.png'>
