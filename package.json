@@ -1,6 +1,6 @@
 {
-  "name": "spiteful-worm-shrug",
-  "productName": "spiteful-worm-shrug",
+  "name": "gen-rand",
+  "productName": "gen-rand",
   "description": "My Electron application description",
   "keywords": [],
   "main": "./main.js",

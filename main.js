@@ -8,14 +8,12 @@ let mainWindow
 function createWindow () {
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1200,
+    height: 960,
     webPreferences: {
       nodeIntegration: true
     }
   })
-
-
 
   // and load the index.html of the app.
   mainWindow.loadFile('index.html')
@@ -31,8 +29,6 @@ function createWindow () {
     mainWindow = null
   })
 }
-
-
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
