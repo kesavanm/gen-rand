@@ -1,11 +1,11 @@
 {
   "name": "gen-rand",
   "productName": "gen-rand",
-  "description": "My Electron application description",
+  "description": "Random password gererator",
   "keywords": [],
   "main": "./main.js",
   "version": "1.0.0",
-  "author": "180976",
+  "author": "hi@kesavan.info",
   "scripts": {
     "start": "electron ."
   },
