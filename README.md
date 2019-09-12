@@ -6,7 +6,7 @@ Generates multiple passwords with random alpha-numeric characters.
 
 # installation
 
-1. Install `npm` from https://www.npmjs.com/get-npm or https://nodejs.org/en/download/
+1. Install `npm` from https://nodejs.org/en/download/
 1. `git clone https://github.com/kesavanm/gen-rand.git`
 1. `cd gen-rand`
 1. `npm install`
