@@ -12,5 +12,5 @@ Generates multiple passwords with random alpha-numeric characters.
 1. `npm install`
 1. `npm start`
 
-#screen-shot
+# screen-shot
 <img src='passwd-gen.png'>
